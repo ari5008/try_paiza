@@ -1,5 +1,38 @@
 package levelup
 
+/* 
+例１ 
+*/
+// package main
+
+// import "fmt"
+
+// func main() {
+// 	var N, Q int
+// 	fmt.Scan(&N, &Q)
+
+// 	A := make(map[int]bool)
+// 	for i := 0; i < N; i++ {
+// 		var x int
+// 		fmt.Scan(&x)
+// 		A[x] = true
+// 	}
+
+// 	for i := 0; i < Q; i++ {
+// 		var k int
+// 		fmt.Scan(&k)
+
+// 		if _, ok := A[k]; ok {
+// 			fmt.Println("YES")
+// 		} else {
+// 			fmt.Println("NO")
+// 		}
+// 	}
+// }
+
+/* 
+例2
+*/
 // package main
 
 // import (
