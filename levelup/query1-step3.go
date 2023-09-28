@@ -21,22 +21,13 @@ package levelup
 // 	}
 
 // 	flag := false
+// 	newNums := QuickSort(nums)
 // 	for i := 0; i <= Q-1; i++ {
 // 		var foundNum int
 // 		fmt.Scan(&foundNum)
 
-		
+// 		flag = binarySearch(newNums, foundNum)
 
-// 		flag = binarySearch(nums, foundNum)
-
-// 		// for _, num := range nums {
-// 		// 	if num == foundNum {
-// 		// 		flag = true
-// 		// 		break
-// 		// 	} else {
-// 		// 		flag = false
-// 		// 	}
-// 		// }
 // 		if flag {
 // 			fmt.Println("YES")
 // 		} else {
@@ -44,6 +35,33 @@ package levelup
 // 		}
 // 	}
 
+// }
+
+// func QuickSort(numbers []int) []int {
+// 	quickSort(numbers, 0, len(numbers)-1)
+// 	return numbers
+// }
+
+// func quickSort(numbers []int, low int, high int) {
+// 	if low < high {
+// 		Index := partition(numbers, low, high)
+// 		quickSort(numbers, low, Index-1)
+// 		quickSort(numbers, Index+1, high)
+// 	}
+// }
+
+// func partition(numbers []int, low int, high int) int {
+// 	pivot := numbers[high]
+// 	i := low - 1
+
+// 	for j := low; j < high; j++ {
+// 		if numbers[j] < pivot {
+// 			i++
+// 			numbers[i], numbers[j] = numbers[j], numbers[i]
+// 		}
+// 	}
+// 	numbers[high], numbers[i+1] = numbers[i+1], numbers[high]
+// 	return i + 1
 // }
 
 // func binarySearch(numbers []int, value int) bool {
